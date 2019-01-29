@@ -1,0 +1,11 @@
+<br><br><br><br><br>
+
+<h1>Welcome to the Crypto Currency Website</h1>
+
+<%= form_for @currency, url: show_path do |f| %>
+<div class="container col-3">
+     <p>Choose your Crypto</p><br>
+     <%= f.collection_select :id, Currency.order(:country),:id,:country, {include_blank: false} %> <br><br><br>
+     <%= f.submit "Search", ({:class => 'btn btn-light btn-sm'}) %>
+</div>
+<% end %>

@@ -1,0 +1,10 @@
+<div class="center">
+  <h2> <%= @currency.country %> </h2>
+
+  <p>$ <%= @currency.rate %></p>
+
+  <h3> <a href="https://coinmarketcap.com/all/views/all/" target="_blank">--> Si tu veux verifier <-- </a> </h3> <br><br>
+  <p><%= link_to "New Research with refresh currencies", root_path,
+                                     :class => 'btn btn-light' %></p>
+
+</div>
