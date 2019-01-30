@@ -1,11 +1,10 @@
-<br><br><br><br><br>
-
-<h1>Welcome to the Crypto Currency Website</h1>
-
-<%= form_for @currency, url: show_path do |f| %>
-<div class="container col-3">
-     <p>Choose your Crypto</p><br>
-     <%= f.collection_select :id, Currency.order(:country),:id,:country, {include_blank: false} %> <br><br><br>
-     <%= f.submit "Search", ({:class => 'btn btn-light btn-sm'}) %>
+<h1>Euro Foreign Exchange Reference Rates</h1>
+<br>
+<div class="text-center">
+  <%= form_for @currency, url: show_path do |c| %>
+  <p>Choose your Foreign Exchange Reference</p><br>
+  <%= c.collection_select :id, Currency.order(:country),:id,:country, {include_blank: false} %>
+  <br><br><br>
+  <%= c.submit "Search", ({:class => 'btn btn-light btn-sm'}) %>
+  <% end %>
 </div>
-<% end %>
