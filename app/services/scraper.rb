@@ -13,7 +13,6 @@ require 'open-uri'
         hash['Rate'] = row.css('.rate').text
         @array << hash
       end
-    @array
   end
 
 
