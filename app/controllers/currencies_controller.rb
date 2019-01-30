@@ -2,7 +2,7 @@ class CurrenciesController < ApplicationController
 
 
   def index
-    Scraper.new.save
+    Scraper.new
     @currency = Currency.new
   end
 
@@ -12,7 +12,7 @@ class CurrenciesController < ApplicationController
   end
 
   def update
-  
+
   end
 
 end

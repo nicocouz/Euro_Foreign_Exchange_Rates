@@ -15,3 +15,6 @@ If the Heroku App does not work please follow these steps
 This project will be frenquently updated, fell free to clone/fork it
 
 Have Fun :+1:
+
+
+Ps: There are some issues with doublons. I am going to fix them soon.
