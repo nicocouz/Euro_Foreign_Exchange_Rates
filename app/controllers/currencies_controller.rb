@@ -1,8 +1,14 @@
     class CurrenciesController < ApplicationController
 
       def index
-        Scraper.new.save
-        @currency = Currency.new
+        if Currency.exists?
+          Scraper.new
+          @currency = Currency.new
+        else
+          Scraper.new.save
+          @currency = Currency.new
+        end
+
       end
 
       def show

@@ -5,6 +5,8 @@
   <p>Choose your Foreign Exchange Reference</p><br>
   <%= c.collection_select :id, Currency.order(:country),:id,:country, {include_blank: false} %>
   <br><br><br>
-  <%= c.submit "Search", ({:class => 'btn btn-light btn-sm'}) %>
+  <%= c.submit "Search", ({:class => 'btn btn-outline-primary'}) %>
   <% end %>
+  <br>
+
 </div>
