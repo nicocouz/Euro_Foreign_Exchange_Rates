@@ -1,4 +1,4 @@
-#  Euro Foreign Exchange Reference Rates Project
+#  Euro Foreign Exchange Reference Rates Scraping Project
 
 ###### This is a personnal project
 
